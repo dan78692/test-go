@@ -1,6 +1,9 @@
 package example
 
 import (
+	"fmt"
+	"os"
+	"path"
 	"path/filepath"
 	"runtime"
 )
@@ -12,5 +15,8 @@ func DirPath() string {
 }
 
 func WDPath() (string, error) {
+	fmt.Println(filepath.Abs("."))
+	fmt.Println(path.Dir("."))
+	fmt.Println(os.Getwd())
 	return filepath.Abs(".")
 }
