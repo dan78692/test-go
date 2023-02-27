@@ -10,3 +10,7 @@ func DirPath() string {
 	curDir := filepath.Dir(b)
 	return curDir
 }
+
+func WDPath() (string, error) {
+	return filepath.Abs("../")
+}
