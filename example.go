@@ -12,5 +12,5 @@ func DirPath() string {
 }
 
 func WDPath() (string, error) {
-	return filepath.Abs("../")
+	return filepath.Abs(".")
 }
